@@ -19,7 +19,7 @@ function randNum() {
 function resetGame() {
     goal = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
     current = 0;
-    
+
     // We begin by expanding our array to include four options.
     var crystalValue = ["#btn1", "#btn2", "#btn3", "#btn4"];
     for (var i = 0; i < crystalValue.length; i++) {
