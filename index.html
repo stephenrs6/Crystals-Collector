@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector!
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Title and Instructions -->
+    <div class="jumbotron">
+        <h1>Crystals Collector!</h1>
+    </div>
+
+    <div class=".col-lg-8 well well-lg">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above
+            the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+
+
+
+
+    <div class = "content">
+        <!-- GoalNumber that restarts on winning or losing -->
+        <!-- Wins and losses column -->
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h3>Wins:
+                    <span id="playerWins"></span>
+                </h3>
+                <h3>Losses:
+                    <span id="playerLosses"></span>
+                </h3>
+            </div>
+        </div>
+        <button class="btn btn-default crystal-img" id="btn1">
+                <div>
+                    <img src="assets/images/aquamarine.jpg" width="100">
+                </div>
+            </button>
+        
+            <button class="btn btn-default crystal-img" id="btn2">
+                <div>
+                    <img src="assets/images/ruby.jpg" width="100">
+                </div>
+            </button>
+        
+            <button class="btn btn-default crystal-img" id="btn3">
+                <div>
+                    <img src="assets/images/sapphire.jpg" width="100">
+                </div>
+            </button>
+        
+            <button class="btn btn-default crystal-img" id="btn4">
+                <div>
+                    <img src="assets/images/emerald.jpg" width="100">
+                </div>
+            </button>
+
+    </div>
+
+    <br>
+
+    <div class="col-lg-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Goal Score:</h2>
+            </div>
+            <div class="panel-body">
+                <h1 id="goal"></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Current Score:</h2>
+            </div>
+            <div class="panel-body">
+                <h1 id="current"></h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <!-- 4 Buttons on key down, updates the total score, range of numbers -->
+        <!-- Total score, wins if === goalNumber, or loses if > goalNumber -->
+    </div>
+    <div>
+    </div>
+
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
